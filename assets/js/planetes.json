@@ -1,8 +1,14 @@
 [
-		{"planète":"Namek","Description":"","Activité":""},
-		{"planète":"Tatooin","Description":"","Activité":""},
-		{"planète":"Végéta","Description":"","Activité":""},
-		{"planète":"Asgard","Description":"","Activité":""},
-		{"planète":"Vormir","Description":"","Activité":""},
-		{"planète":"Jupiter","Description":"","Activité":""}
+		{"type":"Planète","Nom":"Kashyyks","Description":"","Activité":""},
+		{"type":"Planète","Nom":"Arrakis","Description":"","Activité":""},
+		{"type":"Planète","Nom":"Namek","Description":"","Activité":""},
+		{"type":"Planète","Nom":"Noveria","Description":"","Activité":""},
+		{"type":"Planète","Nom":"Jupiter","Description":"","Activité":""},
+		{"type":"Planète","Nom":"Trantor","Description":"","Activité":""}
+		{"type":"Planète","Nom":"Mars","Description":"","Activité":""},
+		{"type":"Étoile","Nom":"Capella","Description":"","Activité":""},
+		{"type":"Planète","Nom":"Lune","Description":"","Activité":""},
+		{"type":"Satellite","Nom":"Titan","Description":"","Activité":""},
+		{"type":"Satellite","Nom":"Étoile Noire","Description":"","Activité":""},
+		{"type":"Satellite","Nom":"Canal","Description":"","Activité":""},
 ]

@@ -12,27 +12,128 @@
     <title>Millenium concordia</title></head>
     <body>
         <!-- container Bootstrap -->
-        <div class="container">
+        <div class="container-fluid">
             <!-- header -->
             <header>
+                <div class="main">
+                    <div class="jumbotron fond text-center"><h1>Millenium concordia</h1></div>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand " href="#"><img src="assets/image/faucon.jpg" class="faucon" alt="Millenium concordia">Millenium concordia</a>
+                        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon "></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form class="form-inline justify-content-center">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Catégorie</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="false" data-toggle="modal" data-target="#InscriptionModal">Inscription</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="false" data-toggle="modal" data-target="#ConnexionModal">Connexion</a>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Panier
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Connexion</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Inscription modal -->
+                                        <div class="modal fade center" id="InscriptionModal" tabindex="-1" role="dialog" aria-labelledby="InscriptionModal" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="container col-md-12">
+                                                        <button type="button" class="btn btn-primary btn-lg btn-block">Inscription via Facebook</button>
+                                                        <button type="button" class="btn btn-outline-dark btn-lg btn-block">Inscription via Google</button>
+                                                        <hr>
+                                                        <button type="button" class="btn btn-danger btn-lg btn-block">Insciption par Mail</button>
+                                                        <div>
+                                                            <small>Vous avez déja un compte airbnb ? <a href="#">Connexion</a></small>
+                                                        </div>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Connextion modal -->
+                                                    <div class="container col-md-12">
+                                                        <button type="button" class="btn btn-primary btn-lg btn-block">Connexion avec Facebook</button>
+                                                        <button type="button" class="btn btn-danger btn-lg btn-block">Connexion avec Google</button>
+                                                        <hr>
+                                                        <div class="container col-md-12 ">
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Adresse Email">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+                                                                </div>
+                                                                <div class="container row">
+                                                                    <div class="form-group form-check">
+                                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                        <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                                                                    </div>
+                                                                    <div class=" offset-md-2">
+                                                                        <small><a href="#">Afficher le mot de passe</a></small>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                            <div class="center">
+                                                                <button type="button" class="btn btn-danger btn-lg btn-block">Connexion</button>
+                                                                <small class="bold"><a href="#">Mot de passe oublié ?</a></small>
+                                                            </div>
+                                                            <br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-            </header>
-            <!-- main -->
-            <main>
+                        </nav>
+                    </div>
+                </header>
+                <!-- main -->
+                <main>
+                    <nav class="nav nav-pills nav-fill mt-5">
+                        <a class="nav-item nav-link active mr-3" href="#">Catégorie</a>
+                        <a class="nav-item nav-link active mr-3" href="#">Produits   </a>
+                        <a class="nav-item nav-link active mr-3" href="#">Détails</a>
+                        <a class="nav-item nav-link active" href="#" tabindex="-1" aria-disabled="true">Panier</a>
+                    </nav>
+                </main>
 
-            </main>
+                <!-- footer -->
+                <footer>
 
-            <!-- footer -->
-            <footer>
+                </footer>
 
-            </footer>
-
-        </div>
-        <!-- scripts JQuery Popper et Bootstrap-->
-        <script src="assets/js/jquery-3.4.0.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- mon script principal -->
-        <script src="assets/js/main.js"></script>
-    </body>
-    </html>
+            </div>
+            <!-- scripts JQuery Popper et Bootstrap-->
+            <script src="assets/js/jquery-3.4.0.min.js"></script>
+            <script src="assets/js/popper.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+            <!-- mon script principal -->
+            <script src="assets/js/main.js"></script>
+        </body>
+        </html>

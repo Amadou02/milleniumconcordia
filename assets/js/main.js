@@ -11,20 +11,20 @@ var spatialTrip = angular.module('spatialTrip',['ngRoute']);
 //initialisation des routes
 mailboxApp.config(function($routeProvider){
     $routeProvider
-    .when('/',{
+    .when('/home',{
         controller: '',
-        templateUrl : 'partials/panier.html'
+        templateUrl : 'partials/home.html'
     })
     // dans cette route, on récupère un paramêtre : id
-    .when('/message/:id?',{
+    .when('/panier/:id?',{
         controller: '',
-        templateUrl: 'partials/categorie.html'
+        templateUrl: 'partials/panier.html'
     })
-    .when('/message/:id?',{
+    .when('/catalogue/:id?',{
         controller: '',
         templateUrl: 'partials/catalogue.html'
     })
-    .when('/message/:id?',{
+    .when('/description/:id?',{
         controller: '',
         templateUrl: 'partials/description.html'
     })

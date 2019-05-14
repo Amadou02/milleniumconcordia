@@ -5,6 +5,12 @@
     height: 45px;
   width: 45px;
 }
-.fond{
-    background: url('assets/image/galaxie.jpg')
+.space{
+    margin-top: 20px;
+    background-image:url("https://cdn.radiofrance.fr/s3/cruiser-production/2018/10/220603cd-bbbf-4b40-8e60-f3bac66519aa/640_gettyimages-1015902818.jpg");
+    background-size: cover;
+    color: white;
+}
+h1{
+    font-size: 80px;
 }

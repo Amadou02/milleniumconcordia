@@ -1,16 +1,13 @@
 .navbar{
-    background-color: #e3f2fd;
+    background-color: ##263238;
+    opacity: 20;
 }
 .faucon{
     height: 45px;
-  width: 45px;
+    width: 45px;
 }
-.space{
-    margin-top: 20px;
-    background-image:url("https://cdn.radiofrance.fr/s3/cruiser-production/2018/10/220603cd-bbbf-4b40-8e60-f3bac66519aa/640_gettyimages-1015902818.jpg");
+
+body{
+    background-image:url("https://images4.alphacoders.com/106/thumb-1920-106826.jpg");
     background-size: cover;
-    color: white;
-}
-h1{
-    font-size: 80px;
 }

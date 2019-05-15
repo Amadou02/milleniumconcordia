@@ -1,0 +1,145 @@
+[
+	{
+		"id": 0,
+		"nom": "Kashyyks",
+		"type":"Planète",
+		"prix": "12.447.923€",
+		"taille": "8112 km²",
+		"échelle  de risque ": "Dangeureux",
+		"Activité": "Trek, grimpe à l’arbre, marche explorative dans la foret tropical",
+		"Description": "Bas, la cohabitation avec les wookiees se passent très bien, le grand chef clanique Zilbaa a accepté un partenariat avec notre agence de voyage tant que nous respectons l’environnement et nous assurons de respecter la flore et la faune locale. activité : trek, marche explorative, gite dans les arbres description : Surnommé l’Éternelle Verte en shyriiwook, Kashyyyk offre un cadre de vie paisible et bucolique, sa forte pluviométrie en fait une planète foisonnante de végétaux et d’amphibiens. Nous vous proposons un séjour en terre sauvage avec de nombreuses activités comme du rafting dans les nombreux rapides que comprends la région, des randonnées de plusieurs jours accompagnées de wookiees locaux qui n’hésiterons pas à vous faire passer dans les villages excentrés et vous offrir le gîte dans leurs maisons en hauteur à même les arbres.
+		",
+		"température":""
+	},
+
+	{
+		"id": 1,
+		"nom": "Arrakis",
+		"type":"Planète",
+		"prix": "12.447.923€",
+		"taille": "8112 km²",
+		"échelle  de risque ": "Dangeureux",
+		"Activité": "séjours en caravane normade, cure de vitaminde D, chevauché de ver,escalade Arrakis",
+		"Description": "Le centre de Viti Levu, plus montagneux, culmine à 1 324 m d'altitude (mont Tomanivi). Isolé et d'accès plus difficile, les routes n'y sont que rarement goudronnées et peu praticables durant la saison des pluies. Le mode de vie y est plus traditionnel, le cheval restant le moyen de transport le plus usité. Elle est également la base de départ vers les îles de l’archipel de Yasawa qui concentrent les principales infrastructures touristiques",
+		"température":"40 degrés"
+	},
+
+	{
+		"id": 2,
+		"nom": "Namek",
+		"type":"Planète",
+		"prix": "12.447.923€",
+		"taille": "8112 km²",
+		"échelle  de risque ": "Faible",
+		"Activité": "Jardinage, quete des dragon ball, yoga",
+		"Description": "",
+		"température":"25 degrés"
+	},
+
+	{
+		"id": 3,
+		"nom": "Noveria",
+		"type":"Planète",
+		"prix": "12.447.923€",
+		"taille": "8112 km²",
+		"échelle  de risque ": "Faible",
+		"Activité": "activités hivernales de tout type, randonnée, ski, marche très nordique ",
+		"Description": "Petit bijoux froid mais chaleureux de la constellation B-299, Noveria entré dans le grand consulat il y’a seulement 21 U.T.G (unité temporelle globalisé) à su se faire une place comme destination incontournable pour tous les membres de la grande couronne de glace, son président d’honneur M.Menethil avait d’ailleurs dans ce discours de bienvenue encouragé les Noveriens à consideré son peuple comme des frères et soeurs enfin réunis. Trêve de petite anecdote historique vous trouverez sur ce globe un panel d’activité d’extérieur, les classiques sports d’hiver ainsi que de nombreuses visites de parc naturel immense ou vous pourrez admirer la richesse de son biotope",
+		"température":"-10 degrés"
+		},
+		{
+			"id": 4,
+			"nom": "Jupiter",
+			"type":"Planète",
+			"prix": "12.447.923€",
+			"taille": "8112 km²",
+			"échelle  de risque ": "Critique",
+			"Activité": "sport, parachute, cache-cache",
+			"Description": "",
+			"température":"−163 degrés"
+		},
+
+		{
+			"id": 5,
+			"nom": "Trantor",
+			"type":"Planète",
+			"prix": "12.447.923€",
+			"taille": "8112 km²",
+			"échelle  de risque ": "Faible",
+			"Activité": "Service militaire , JAPD, camps de redressement pour mineur qui travaillent mal à l’école.",
+			"Description": "« Trantor ? j’en veux encore ! » Offre spécial enfant relou Vous avez mal éduqué vos enfants et vous vous en mordez les doigts aujourd’hui  ? Nous venons à votre secours avec notre programme de remise en forme mentale nouvelle génération encore plus durable. Une planète dense et autoritaire débarrassé du superflux végétal et animal qui pourrait dissiper nos jeunes arrivants",
+			"température":"40 degrés"
+		},
+
+		{
+			"id": 6,
+			"nom": "Mars",
+			"type":"Planète",
+			"prix": "12.447.923€",
+			"taille": "144 798 500 km2",
+			"échelle  de risque ": "Faible",
+			"Activité": "Chasse aux martiens,  24heure du Mars",
+			"Description": "Le centre de Viti Levu, plus montagneux, culmine à 1 324 m d'altitude (mont Tomanivi). Isolé et d'accès plus difficile, les routes n'y sont que rarement goudronnées et peu praticables durant la saison des pluies. Le mode de vie y est plus traditionnel, le cheval restant le moyen de transport le plus usité. Elle est également la base de départ vers les îles de l’archipel de Yasawa qui concentrent les principales infrastructures touristiques",
+			"température":"−63 degrés"
+		},
+
+		{
+			"id": 7,
+			"nom": "Capella",
+			"type":"Étoile",
+			"prix": "12.447.923€",
+			"taille": "10,2 rayon solaire",
+			"échelle  de risque ": "Dangeureux",
+			"Activité": "séjours en caravane normade, cure de vitaminde D, chevauché de ver,escalade Arrakis",
+			"Description": "Le centre de Viti Levu, plus montagneux, culmine à 1 324 m d'altitude (mont Tomanivi). Isolé et d'accès plus difficile, les routes n'y sont que rarement goudronnées et peu praticables durant la saison des pluies. Le mode de vie y est plus traditionnel, le cheval restant le moyen de transport le plus usité. Elle est également la base de départ vers les îles de l’archipel de Yasawa qui concentrent les principales infrastructures touristiques",
+			"température":"température : Environ 40 degrés"
+		},
+
+		{
+			"id": 8,
+			"nom": "Lune",
+			"type":"Satellite",
+			"type":"Satellite",
+			"prix": "12.447.923€",
+			"taille": "37 871 220,85 km2",
+			"échelle  de risque ": "zéro",
+			"Activité": "moon-walk moonbike",
+			"Description": "Venez vous sentir plus leger sur la lune !». Votre vie vous pèse ? Votre conjoint vous trouve lourd ? Vous souhaitez perdre du muscle ? Vous pensez que la nuit tous les chats ne sont pas gris ? N’attendez plus, et venez séjourner chez nous sur la Lune ; au programme moobike et moonwalk afin que vous puissez vous ressourcer dans un univers calme et insonorisé. Notre SPA spécial bien-être « Avec la moon on change de mood » sera vous détendre par ses bains exfoliants de roche lunaire et ses cures de non vent. Prêt pour un séjour bien luné ?",
+			"température":"−23 degrés"
+		},
+
+		{
+			"id": 9,
+			"nom": "Titan",
+			"type":"Satellite",
+			"prix": "12.447.923€",
+			"taille": "5 151,0±4,0 km2",
+			"échelle  de risque ": "Risqué",
+			"Activité": "moon-walk moonbike",
+			"Description": "Venez vous sentir plus leger sur la lune !». Votre vie vous pèse ? Votre conjoint vous trouve lourd ? Vous souhaitez perdre du muscle ? Vous pensez que la nuit tous les chats ne sont pas gris ? N’attendez plus, et venez séjourner chez nous sur la Lune ; au programme moobike et moonwalk afin que vous puissez vous ressourcer dans un univers calme et insonorisé. Notre SPA spécial bien-être « Avec la moon on change de mood » sera vous détendre par ses bains exfoliants de roche lunaire et ses cures de non vent. Prêt pour un séjour bien luné ?",
+			"température":"-179 ℃ degrés"
+		},
+
+		{
+			"id": 10,
+			"nom": "Étoile Noire",
+			"type":"Satellite",
+			"prix": "12.447.923€",
+			"taille": "144 798 500 km²",
+			"échelle  de risque ": "Dangeureux",
+			"Activité": "séjours en caravane normade, cure de vitaminde D, chevauché de ver,escalade Arrakis",
+			"Description": "Le centre de Viti Levu, plus montagneux, culmine à 1 324 m d'altitude (mont Tomanivi). Isolé et d'accès plus difficile, les routes n'y sont que rarement goudronnées et peu praticables durant la saison des pluies. Le mode de vie y est plus traditionnel, le cheval restant le moyen de transport le plus usité. Elle est également la base de départ vers les îles de l’archipel de Yasawa qui concentrent les principales infrastructures touristiques",
+			"température":"température : Environ 40 degrés"
+		},
+		{
+			"id": 11,
+			"nom": "Europe",
+			"type":"Satellite",
+			"prix": "12.447.923€",
+			"taille": "3 121,6 km²",
+			"échelle  de risque ": "Moyenne",
+			"Activité": "emise en forme physique, stage de récupération de point, salle de conférence",
+			"Description": "Venez retrouver la forme dans nos centres de coaching labellisé DarkVadorRouge et participez aux nombreux circuits disponible en plus de célèbre chemin de pelrinage de Saint-Luc de coruscant. L’étoile noire dispose de nombreuse salle de réunion permettant d’organiser conférences et autres réunions professionnelle et culturelle. Vous pourrez ensuite vous détendre auprès de nos nombreux haman de recouvrement des force du Mal afin de repartir plus motivé que jamais à la conquête égoïste de votre réussite personnelle.",
+			"température":"-148 degrés"
+		},
+	]

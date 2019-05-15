@@ -1,0 +1,150 @@
+[
+{
+       
+    "type": "Planète",
+    "nom": "Kashyyks",
+    "localisation": "Mytaranor",
+    "satellites": "3",
+    "population": "45 000 000",
+    "paysages": "Montages, Forêts et Marécages",
+    "sites": "Arbres géant Wroshyrs et Cités dans les arbres",
+    "langues": "Shyriiwook et Xaczik",
+    "description": "",
+    "activites": "Trek en forêt ou montagne, grimpe à l’arbre, marche découverte dans la foret tropical"
+},
+{   
+    "type": "Planète",
+    "nom": "Arrakis",
+    "localisation":"",
+    "satellites":"11",
+    "population":"2 000 000 000",
+    "paysages":"Deserts, canyons et montagnes rocheuses ",
+    "sites":"Mont Space-Rochemore",
+    "langues":"Anglais",
+    "description": "",
+    "activites": ""
+},
+{
+            
+    "type": "Planète",
+    "nom": "Namek",
+    "localisation":"",
+    "satellites":"3",
+    "population":"",
+    "paysages":"",
+    "sites":"",
+    "langues":"Namek",
+    "description": "",
+    "activites": ""
+},
+{
+       
+    "type": "Planète",
+    "nom": "Noveria",
+    "localisation":"",
+    "satellites":"Aucun",
+    "population":"405 200",
+    "paysages":"Montagne, glaciers et deserts blanc",
+    "sites":"",
+    "langues":"",
+    "description": "Novéria est une minuscule planète tellurique gelée, tout juste habitable selon les critères communément admis. C'est la propriété de la Noveria Development Corporation, qui accueille dans ses laboratoires les expériences trop dangereuses ou contestables pour être menées ailleurs. Cette situation unique fait que la planète est au cœur de nombreuses théories du complot. ",
+    "activites": ""
+},
+{
+       
+    "type": "Planète",
+    "nom": "Jupiter",
+    "localisation":"Systeme solaire",
+    "satellites":"79",
+    "population":"0",
+    "paysages":"Océans gazeux",
+    "sites":"Aucun",
+    "langues":"Aucune",
+    "description": "Jupiter est une planète géante gazeuse. Il s'agit de la plus grosse planète du Système solaire, plus volumineuse et massive que toutes les autres planètes réunies, et la cinquième planète par sa distance au Soleil (après Mercure, Vénus, la Terre et Mars).Jupiter est ainsi officiellement désignée, en français comme en anglaisb, d'après le dieu romain Jupiter, assimilé au dieu grec Zeus. ",
+    "activites": "Base jumping et saut en parachute entre les couches atmosphériques"
+},
+{
+       
+    "type": "Planète",
+    "nom": "Trantor",
+    "localisation":"",
+    "satellites":"",
+    "population":"",
+    "paysages":"",
+    "sites":"",
+    "langues":"",
+    "description": "",
+    "activites": "",
+}
+{
+       
+    "type": "Planète",
+    "nom": "Mars",
+    "localisation":"Système solaire",
+    "satellites":"2",
+    "population":"21 000",
+    "paysages":"Deserts",
+    "sites":" Canyon rouge",
+    "langues":"Latin",
+    "description": "",
+    "activites": "Sand-surf, chasse aux natifs visite des mines d'argon",
+},
+{
+     
+    "type": "Étoile",
+    "nom": "Capella",
+    "localisation":"Constellation de Cocher",
+    "sites":"Cyclone antérieur droit",
+    "description": "",
+    "activites": "Lancé de projetctiles",
+},
+{
+     
+    "type": "Planète",
+    "nom": "Lune",
+    "localisation":"Système solaire, orbite de la Terre",
+    "population":"1 000 000 000",
+    "paysages":" Desert blanc",
+    "sites":"Mers lunaire et cratères en tout genre",
+    "langues":"Célénien",
+    "description": "La Lune est le premier objet non terrestre visité par l'Homme. Le premier à y avoir marché est l'astronaute américain Neil Armstrong le 21 juillet 1969. Après lui, onze autres hommes ont foulé le sol de la Lune, tous membres du programme Apollo. Aujourd'hui plus d'un milliard d'ames se sont installé dans la capitale et unique ville de l'astre 'Jule Verne' ",
+    "activites": "Golf, chase aux trésor."
+},
+{
+     
+    "type": "Satellite",
+    "nom": "Titan",
+    "localisation":"Système solaire, orbite de Saturne",
+    "satellites":"",
+    "population":"5 000 543,3",
+    "paysages":"Montagne et champs de glace",
+    "sites":"Mont Kratos",
+    "langues":"Saturnien",
+    "description": "Titan, aussi appelé Saturne VI, est le plus grand satellite naturel de Saturne. Avec un diamètre 6 % plus grand que celui de Mercure, Titan est par la taille le deuxième satellite du système solaire, après Ganymède. Il s’agit du seul satellite connu à posséder une atmosphère dense. Découvert par l’astronome néerlandais Christian Huygens en 1655, Titan est la première lune observée autour de Saturne7. Titan est principalement composé de roche et d’eau gelée. Son épaisse atmosphère a longtemps empêché l’observation de sa surface, jusqu’à l’arrivée de la mission Cassini-Huygens en 2004. Cette dernière a permis la découverte de lacs d’hydrocarbures liquides dans les régions polaires du satellite. Du point de vue géologique, la surface de Titan est jeune ; quelques montagnes ainsi que des cryovolcans éventuels y sont répertoriés, mais cette surface demeure relativement plate et lisse, avec peu de cratères d’impact observés. ",
+    "activites": ""
+},
+{
+    "id": ""    
+    "type": "Satellite",
+    "nom": "Étoile Noire",
+    "localisation":"Voie Lactée, Secteur Sombre",
+    "population":"26 930",
+    "sites":"Centre commercial géant",
+    "langues":"Polonais",
+    "description": "",
+    "activites": "Brevet de pilotage, shopping promenade"
+},
+{
+"id": ""
+    "type": "Satellite",
+    "nom": "Europe"
+    "localisation":"",
+    "satellites":"",
+    "population":"",
+    "paysages":"",
+    "sites":"",
+    "langues":"",,
+    "description": "Avec un diamètre de 3 121 kilomètres, Europe est le quatrième plus gros satellite de Jupiter et le sixième du système solaire. Sa surface est composée de glace et se trouve être la plus lisse de tout le système solaire. Bien que sa température soit au maximum de −150 °C, l'humanitée s'y est implanté il y a quelques années de cela.",
+    "activites": ""
+}, 
+]

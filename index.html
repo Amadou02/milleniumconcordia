@@ -16,32 +16,41 @@
         <div class="container-fluid">
             <!-- header -->
             <header>
-                <div class="main">
-                    <div class="space jumbotron text-center"><h1>Millenium concordia</h1></div>
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand " href="#"><img src="assets/image/faucon.jpg" class="faucon" alt="Millenium concordia">Millenium concordia</a>
-                        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon "></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <form class="form-inline justify-content-center">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Catégorie</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="false" data-toggle="modal" data-target="#InscriptionModal">Inscription</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="false" data-toggle="modal" data-target="#ConnexionModal">Connexion</a>
-                                    </li>
-                                </ul>
-                            </form>
-                        </div>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#"><img src="assets/image/faucon.jpg" class="faucon" alt="Millenium concordia">Millenium concordia</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Catégorie
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Planètes</a>
+                                    <a class="dropdown-item" href="#">Satellites</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Étoiles</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Inscription</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Connexion</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
                             Connexion
                         </button>
-                        <!-- Modal -->
+                    </div>
+                </nav>
+<!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
@@ -116,12 +125,7 @@
                 </header>
                 <!-- main -->
                 <main>
-                    <nav class="nav nav-pills nav-fill mt-5">
-                        <a class="nav-item nav-link active mr-3" href="#">Catégorie</a>
-                        <a class="nav-item nav-link active mr-3" href="#">Produits   </a>
-                        <a class="nav-item nav-link active mr-3" href="#">Détails</a>
-                        <a class="nav-item nav-link active" href="#" tabindex="-1" aria-disabled="true">Panier</a>
-                    </nav>
+
                 </main>
 
                 <!-- footer -->

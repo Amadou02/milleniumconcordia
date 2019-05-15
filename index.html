@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" ng-app="MyApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/image/faucon.jpg">
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
     <script src="assets/js/angular.js"></script>
     <title>Millenium concordia</title></head>
-    <body>
+    <body ng-view>
         <!-- container Bootstrap -->
         <div class="container-fluid">
             <!-- header -->
             <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light justify-content-center bg-light">
                     <a class="navbar-brand" href="#"><img src="assets/image/faucon.jpg" class="faucon" alt="Millenium concordia">Millenium concordia</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -28,117 +27,166 @@
                                 <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Catégorie
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Planètes</a>
-                                    <a class="dropdown-item" href="#">Satellites</a>
+                                    <a class="dropdown-item" href="partials/Planetes.html">Planètes</a>
+                                    <a class="dropdown-item" href="partials/Lunes.html">Lunes</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Étoiles</a>
+                                    <a class="dropdown-item" href="partials/Étoiles.html">Étoiles</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Inscription</a>
+                                <a class="nav-link active" href="#">Inscription</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link">Connexion</a>
+                                <a class="nav-link active" href="#">Contact</a>
                             </li>
                         </ul>
+                        <input class="Search form-control mr-sm-2 " type="text" placeholder="Rechercher" aria-label="Search">
+
+                        <button type="button" id="panier" class="btn btn-primary" data-toggle="modal" data-target="#modalPanier">Panier</button>
+                        <div class="modal" id="modalPanier" tabindex="-1" role="dialog" aria-labelledby="modalPanierLabel" aria-hidden="true">
+                          <div class="h-100 modal-dialog modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content bgc3">
+                              <div class="modal-body ">
+                                <h3 class="text-center font-weight-bold">Votre panier</h3>
+                                <hr class="w-50 pb-2">
+                                <div class="row mx-2">
+                                  <div class="col-7">
+                                    <div class="justify-content-center align-content-center row bgc2">
+                                      <p>Articles dans votre panier</p>
+                                    </div>
+                                    <div class="row">
+                                      <div id="articlesPanier" class="col-12 shadow">
+                                        <!-- ici on inserera les articles selectionnés -->
+                                        <section>
+                                          <div id="texte-panier">Mon panier est vide</div>
+                                          <div>
+                                            <ul id="details-panel">
+                                              <li id="article1">Vous n'avez pas d'article 1</li>
+                                              <li id="article2">Vous n'avez pas d'article 2</li>
+                                              <li id="article3">Vous n'avez pas d'article 3</li>
+                                            </ul>
+                                          </div>
+                                        </section>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-4 offset-1">
+                                    <div class="row">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button id="validateCart" type="button" class="btn bgc1 txc4 shadow">Commander</button>
+                                <button type="button" class="btn bgc6 txc4 shadow" data-dismiss="modal"><small>Continuez vos achats</small></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
                             Connexion
                         </button>
                     </div>
                 </nav>
-<!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Connexion</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <!-- Inscription modal -->
-                                        <div class="modal fade center" id="InscriptionModal" tabindex="-1" role="dialog" aria-labelledby="InscriptionModal" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="container col-md-12">
-                                                        <button type="button" class="btn btn-primary btn-lg btn-block">Inscription via Facebook</button>
-                                                        <button type="button" class="btn btn-outline-dark btn-lg btn-block">Inscription via Google</button>
-                                                        <hr>
-                                                        <button type="button" class="btn btn-danger btn-lg btn-block">Insciption par Mail</button>
-                                                        <div>
-                                                            <small>Vous avez déja un compte airbnb ? <a href="#">Connexion</a></small>
-                                                        </div>
-                                                        <br>
-                                                    </div>
-                                                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Connexion</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Inscription modal -->
+                                <div class="modal fade center" id="InscriptionModal" tabindex="-1" role="dialog" aria-labelledby="InscriptionModal" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
                                             </div>
-                                        </div>
-                                        <!-- Connextion modal -->
-                                                    <div class="container col-md-12">
-                                                        <button type="button" class="btn btn-primary btn-lg btn-block">Connexion avec Facebook</button>
-                                                        <button type="button" class="btn btn-danger btn-lg btn-block">Connexion avec Google</button>
-                                                        <hr>
-                                                        <div class="container col-md-12 ">
-                                                            <form>
-                                                                <div class="form-group">
-                                                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Adresse Email">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
-                                                                </div>
-                                                                <div class="container row">
-                                                                    <div class="form-group form-check">
-                                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                                        <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
-                                                                    </div>
-                                                                    <div class=" offset-md-2">
-                                                                        <small><a href="#">Afficher le mot de passe</a></small>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                            <div class="center">
-                                                                <button type="button" class="btn btn-danger btn-lg btn-block">Connexion</button>
-                                                                <small class="bold"><a href="#">Mot de passe oublié ?</a></small>
-                                                            </div>
-                                                            <br>
-                                                        </div>
-                                                    </div>
+                                            <div class="container col-md-12">
+                                                <button type="button" class="btn btn-primary btn-lg btn-block">Inscription via Facebook</button>
+                                                <button type="button" class="btn btn-outline-dark btn-lg btn-block">Inscription via Google</button>
+                                                <hr>
+                                                <button type="button" class="btn btn-danger btn-lg btn-block">Insciption par Mail</button>
+                                                <div>
+                                                    <small>Vous avez déja un compte airbnb ? <a href="#">Connexion</a></small>
                                                 </div>
+                                                <br>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Connextion modal -->
+                                <div class="container col-md-12">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block">Connexion avec Facebook</button>
+                                    <button type="button" class="btn btn-danger btn-lg btn-block">Connexion avec Google</button>
+                                    <hr>
+                                    <div class="container col-md-12 ">
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Adresse Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+                                            </div>
+                                            <div class="container row">
+                                                <div class="form-group form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                                                </div>
+                                                <div class=" offset-md-2">
+                                                    <small><a href="#">Afficher le mot de passe</a></small>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="center">
+                                            <button type="button" class="btn btn-danger btn-lg btn-block">Connexion</button>
+                                            <small class="bold"><a href="#">Mot de passe oublié ?</a></small>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
                             </div>
-
-                        </nav>
+                        </div>
                     </div>
-                </header>
-                <!-- main -->
-                <main>
+                </div>
+    </nav>
+</div>
+</header>
+<!-- main -->
+<main>
+<div ng-view></div>
+<div class="jumbotron m-5">
+    <section>
+        <div>
+          <button onclick="ajouterArticle(1)">Ajouter Article 1€</button>
+          <button onclick="ajouterArticle(10)">Ajouter Article 10€</button>
+          <button onclick="ajouterArticle(100)">Ajouter Article 100€</button>
+        </div>
+      </section>
+</div>
+</main>
 
-                </main>
+<!-- footer -->
+<footer>
 
-                <!-- footer -->
-                <footer>
-
-                </footer>
-
-            </div>
-            <!-- scripts JQuery Popper et Bootstrap-->
-            <script src="assets/js/jquery-3.4.0.min.js"></script>
-            <script src="assets/js/popper.min.js"></script>
-            <script src="assets/js/bootstrap.min.js"></script>
-            <!-- mon script principal -->
-            <script src="assets/js/main.js"></script>
-        </body>
-        </html>
+</footer>
+</div>
+<!-- scripts JQuery Popper et Bootstrap-->
+<script src="assets/js/jquery-3.4.0.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- mon script principal -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -6,8 +6,42 @@
     height: 45px;
     width: 45px;
 }
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
 
 body{
     background-image:url("https://images4.alphacoders.com/106/thumb-1920-106826.jpg");
     background-size: cover;
+     font-family: 'PT Sans', sans-serif;
+}
+.Search{
+    height: 45%;
+    width: 45%;
+}
+button {
+  background-color: #009FFD;
+  padding: 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+section div {
+  text-align: center;
+}
+#texte-panier {
+  margin: 80px;
+  font-size: 26px;
+  font-weight: 600;
+}
+#details-panel {
+  list-style-type: none;
+}
+#article1 {
+  visibility: hidden;
+}
+#article2 {
+  visibility: hidden;
+}
+#article3 {
+  visibility: hidden;
 }

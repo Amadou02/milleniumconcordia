@@ -4,41 +4,93 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script>
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
+    <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
     <script src="angularjs_route.js"></script>
+    <script src="modal.css"></script>
     <script src="script.js"></script>
 </head>
 
-<body  >
+<body   >
     <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand " href="#"><img src="assets/img/airbnb.png" alt="ArrowHead"></a>
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon " style="color: grey"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="form-inline my-2 my-lg-0 offset-md-9">
+       <nav class="navbar navbar-expand-lg navbar-light justify-content-center bg-light">
+                <a class="navbar-brand" href="#"><img src="https://cdn.discordapp.com/attachments/562613419220664330/578547563288854528/faucon.jpg" class="faucon" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: grey">Aide</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Catégorie
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item">Planètes</a>
+                                <a class="dropdown-item">Lunes</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">Étoiles</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="false" data-toggle="modal" data-target="#InscriptionModal" style="color: grey">Inscription</a>
+                            <a class="nav-link active" href="#">Inscription</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="false" data-toggle="modal" data-target="#ConnexionModal" style="color: grey">Connexion</a>
+                            <a class="nav-link active" href="#">Contact</a>
                         </li>
-                        <li>
-                            <a href="Explorer.html"><button type="button" class="btn btn-outline-danger">Explorer</button></a>
-                        </li>
+                        <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target="#exampleModal">Connexion</button>
                     </ul>
-                </form>
-            </div>
-        </nav>
+                    <input class="Search form-control mr-sm-2 " type="text" placeholder="Rechercher" aria-label="Search">
+                    <button type="button" id="panier" class="btn btn-primary" data-toggle="modal" data-target="#modalPanier">Panier</button>
+                    <div class="modal" id="modalPanier" tabindex="-1" role="dialog" aria-labelledby="modalPanierLabel" aria-hidden="true">
+                        <div class="h-100 modal-dialog modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-content bgc3">
+                                <div class="modal-body ">
+                                    <h3 class="text-center font-weight-bold">Votre panier</h3>
+                                    <hr class="w-50 pb-2">
+                                    <div class="row mx-2">
+                                        <div class="col-7">
+                                            <div class="justify-content-center align-content-center row bgc2">
+                                                <h1>Articles dans votre panier</h1>
+                                            </div>
+                                            <div class="row">
+                                                <div id="articlesPanier" class="col-12 shadow">
+                                                    <!-- ici on inserera les articles selectionnés -->
+                                                    <section>
+                                                        <div id="texte-panier">Mon panier est vide</div>
+                                                        <div>
+                                                            <ul id="details-panel">
+                                                                <li id="article1">Vous n'avez pas d'article 1</li>
+                                                                <li id="article2">Vous n'avez pas d'article 2</li>
+                                                                <li id="article3">Vous n'avez pas d'article 3</li>
+                                                               
+                                                            </ul>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 offset-1">
+                                            <div class="row">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="validateCart" type="button" class="btn bgc1 txc4 shadow">Commander</button>
+                                    <button type="button" class="btn bgc6 txc4 shadow" data-dismiss="modal"><small>Continuez vos achats</small></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
     </div>
     <!-- Inscription modal -->
     <div class="modal fade center" id="InscriptionModal" tabindex="-1" role="dialog" aria-labelledby="InscriptionModal" aria-hidden="true">
@@ -105,15 +157,77 @@
         </div>
     </div>
     <main>
-        <div class="ng-view ng-scope"></div>
+        <div ng-view ></div>
         <div class="footer">
   <div id="button"></div>
 <div id="container">
 <div id="cont">
 <div class="footer_center">
-       <h3>Classy footer text</h3>
+       
 </div>
 </div>
+    <footer class="section bg-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="">
+                        <h6 class="footer-heading text-uppercase text-white">Information</h6>
+                        <ul class="list-unstyled footer-link mt-4">
+                            <li><a href="">Pages</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">Feuchers</a></li>
+                            <li><a href="">Pricing</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="">
+                        <h6 class="footer-heading text-uppercase text-white">Ressources</h6>
+                        <ul class="list-unstyled footer-link mt-4">
+                            <li><a href="">Monitoring Grader </a></li>
+                            <li><a href="">Video Tutorial</a></li>
+                            <li><a href="">Term &amp; Service</a></li>
+                            <li><a href="">Zeeko API</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="">
+                        <h6 class="footer-heading text-uppercase text-white">Help</h6>
+                        <ul class="list-unstyled footer-link mt-4">
+                            <li><a href="">Sign Up </a></li>
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Terms of Services</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="">
+                        <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
+                        <p class="contact-info mt-4">Contact us if need help withanything</p>
+                        <p class="contact-info">+01 123-456-7890</p>
+                        <div class="mt-5">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#"><i class="fab facebook footer-social-icon fa-facebook-f"></i></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fab twitter footer-social-icon fa-twitter"></i></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fab google footer-social-icon fa-google"></i></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fab apple footer-social-icon fa-apple"></i></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <p class="footer-alt mb-0 f-14">2019 © Anup, All Rights Reserved</p>
+        </div>
+    </footer>
 </div>
 </div>
 

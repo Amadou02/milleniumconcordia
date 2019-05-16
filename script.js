@@ -2,7 +2,7 @@ var Millenium = angular.module('Millenium', ['ngRoute']);
 
 
     Millenium.config(function($routeProvider) {
-
+// Routes
         $routeProvider
             .when('/main', {
                 templateUrl: 'views/Main.html'
@@ -18,15 +18,29 @@ var Millenium = angular.module('Millenium', ['ngRoute']);
                 templateUrl: 'views/Lunes.html'
 
             })
-            .when('/info', {
+            .when('/info/:id?', {
                 templateUrl: 'views/Info.html',
-                controller: 'Millenium.controller'
+                controller: 'detailCtrl'
 
             })
             .otherwise({
                 retirectTo: '/main'
             })
     })
+       // animated modals
+
+        $('.button').click(function(){
+  var buttonId = $(this).attr('id');
+  $('#modal-container').removeAttr('class').addClass(buttonId);
+  $('body').addClass('modal-active');
+})
+
+$('#modal-container').click(function(){
+  $(this).addClass('out');
+  $('body').removeClass('modal-active');
+});
+
+// link json
     Millenium.run(function($rootScope, $http) {
     $http.get("index.json")
         .then(function(response) {
@@ -36,7 +50,7 @@ var Millenium = angular.module('Millenium', ['ngRoute']);
         });
 
     Millenium.controller('detailCtrl', function($rootScope, $scope, $http, $routeParams) {
-        $scope.id = $routeParams.id;
+        $scope.index = $routeParams.id;
         $scope.type = $scope.element[$scope.id].type;
         $scope.nom = $scope.element[$scope.id].nom;
         $scope.localisation = $scope.element[$scope.id].localisation;

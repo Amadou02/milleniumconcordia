@@ -1,107 +1,278 @@
-    <div class="cat">
-
-        <!-- Liste Planets -->
-
-                <div class="wrapper">
-                    <h1>Planets</h1>
-                    <div class="cols">
-                        <div class="col" ontouchstart="this.classList.toggle('hover');">
-                            <div class="container">
-                                <div class="front" style="background-image: url(assets/img/Mars.jpg)">
-                                    <div class="inner">
-                                        <p style="color: white; text-shadow: grey 2px 3px; ">Mars</p>
-                                        <small style="color: white; text-shadow: grey 2px 3px;">La planete Rouge</small>
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="inner">
-                                        <p>L'équipe de Millénium vous propose une randonnée dans une des plus belle nébuleuse d'Andromède.</p>
-                                        <button type="button" class="btn btn-outline-light" href="#!/info">Info</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col" ontouchstart="this.classList.toggle('hover');">
-                            <div class="container">
-                                <div class="front" style="background-image: url(assets/img/jupiter.png)">
-                                    <div class="inner">
-                                        <p style="color: white; text-shadow: grey 2px 3px;">Jupiter</p>
-                                        <small style="color: white; text-shadow: grey 2px 3px;">Lorem ipsum</small>
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="inner">
-                                        <p>L'équipe de Millénium vous propose une randonnée dans une des plus belle nébuleuse d'Andromède.</p>
-                                        <button type="button" class="btn btn-outline-light">Info</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col" ontouchstart="this.classList.toggle('hover');">
-                            <div class="container">
-                                <div class="front" style="background-image: url(assets/img/namek.jpg)">
-                                    <div class="inner">
-                                        <p style="color: white; text-shadow: grey 2px 3px;">Namek</p>
-                                        <small style="color: white; text-shadow: grey 2px 3px;">La planete végétale</small>
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="inner">
-                                        <p>L'équipe de Millénium vous propose une randonnée dans une des plus belle nébuleuse d'Andromède.</p>
-                                        <button type="button" class="btn btn-outline-light">Info</button>
-                                    </div>
-                                </div>
-                            </div>
+<div class="cat">
+    <!-- Liste Planets -->
+    <div class="wrapper">
+        <h1>Planets</h1>
+        <div class="cols">
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(assets/img/Mars.jpg)">
+                        <div class="inner">
+                            <p style="color: white; text-shadow: grey 2px 3px; ">Mars</p>
+                            <small style="color: white; text-shadow: grey 2px 3px;">La planete Rouge</small>
                         </div>
                     </div>
-                </div>
-                <div class="wrapper">
-                    <div class="cols">
-                        <div class="col" ontouchstart="this.classList.toggle('hover');">
-                            <div class="container">
-                                <div class="front" style="background-image: url(assets/img/Kashyyyk.jpg)">
-                                    <div class="inner">
-                                        <p>Kashyyyk</p>
-                                        <small>La planete Rouge</small>
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="inner">
-                                        <p>L'équipe de Millénium vous propose une randonnée dans une des plus belle nébuleuse d'Andromède.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col" ontouchstart="this.classList.toggle('hover');">
-                            <div class="container">
-                                <div class="front" style="background-image: url(assets/img/noveria.jpg)">
-                                    <div class="inner">
-                                        <p>Noveria</p>
-                                        <span>Lorem ipsum</span>
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="inner">
-                                        <p>L'équipe de Millénium vous propose une randonnée dans une des plus belle nébuleuse d'Andromède.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col" ontouchstart="this.classList.toggle('hover');">
-                            <div class="container">
-                                <div class="front" style="background-image: url(assets/img/arakis.jpg)">
-                                    <div class="inner">
-                                        <p>Arrakis</p>
-                                        <span>La planete végétale</span>
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="inner">
-                                        <p>L'équipe de Millénium vous propose une randonnée dans une des plus belle nébuleuse d'Andromède.</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>La planete rouge vous ouvre les porte de ces mystères.
+                            </p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Mars">
+                                Acheter
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(assets/img/jupiter.png)">
+                        <div class="inner">
+                            <p style="color: white; text-shadow: grey 2px 3px;">Jupiter</p>
+                            <small style="color: white; text-shadow: grey 2px 3px;">Lorem ipsum</small>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>L'équipe de Millénium vous propose une randonnée dans une des plus belle nébuleuse d'Andromède.</p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Jupiter">
+                                Acheter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(assets/img/namek.jpg)">
+                        <div class="inner">
+                            <p style="color: white; text-shadow: grey 2px 3px;">Namek</p>
+                            <small style="color: white; text-shadow: grey 2px 3px;">La planete végétale</small>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>Parter sur les traces de vos héros de fiction favoris.</p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Namek">
+                                Acheter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="cols">
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(assets/img/Kashyyyk.jpg)">
+                        <div class="inner">
+                            <p>Kashyyyk</p>
+                            <small>La planete Rouge</small>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>L'équipe de Millénium vous propose une randonnée dans une des plus belle nébuleuse d'Andromède.</p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Kashyyyk">
+                                Acheter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(assets/img/noveria.jpg)">
+                        <div class="inner">
+                            <p>Noveria</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>L'équipe de Millénium vous propose une randonnée dans une des plus belle nébuleuse d'Andromède.</p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Noveria">
+                                Acheter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(assets/img/arakis.jpg)">
+                        <div class="inner">
+                            <p>Arrakis</p>
+                            <span>La planete végétale</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>L'équipe de Millénium vous propose une randonnée dans une des plus belle nébuleuse d'Andromède.</p>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Arrakis">
+                                Acheter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mars -->
+<div class="modal fade" id="Mars" tabindex="-1" role="dialog" aria-labelledby="MarsLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="MarsLabel">Billet pour Mars</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Localisation : Systeme Solaire</p>
+                <p>Satelittes : 2</p>
+                <p>Population : 21 000</p>
+                <p>Paysages : Montagnes</p>
+                <p>Sites : Canyon rouge</p>
+                <p>Activitées : Sand-Surf, chasse aux natifs, visites des mines d'argon</p>
+                <p>La petite planete rouge qui a bersé les rêves des hommes pendant si longtemps est enfin accecible au public, venez decouvrir les plages de sable rouge, les montage rouge longant la Stanley's road, et profiter du centre de remise ne forme le plus avancé de la Galaxy.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button onclick="ajouterArticle(15000)" type="button" class="btn btn-primary">Ajouter au panier</button>
+            </div>
+        </div>
+    </div>
+</div><!-- Jupiter -->
+<div class="modal fade" id="Jupiter" tabindex="-1" role="dialog" aria-labelledby="JupiterLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="JupiterLabel">Billet pour Jupiter</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>4
+            </div>
+            <div class="modal-body">
+                <p>Jupiter, longtemps innacessible à cause de sa compasition gazeuze, la planete thélurique et ça ville suspendu vous invite à devouvrir ses charmes et son atmosphere bucollique</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button onclick="ajouterArticle(10000)"  type="button" class="btn btn-primary">Ajouter au Panier</button>
+            </div>
+        </div>
+    </div>
+</div><!-- Namek -->
+<div class="modal fade" id="Namek" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Billet pour Namek</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class=ybold>Localisation: <span>à 2 semaines de voyage</span></p>
+   <p class=ybold>Satellites: <span>3</span></p>
+   <p class=ybold>Population: <span>3 384 493</span></p>
+   <p class=ybold>Paysages: <span>Plaine et sous-bois</span></p>
+   <p class=ybold>Sites: <span>Village du chef Namek, Bar le Picolloleur</span></p>
+   <p class=ybold>Langue(s): <span>Namek</span></p>
+   <p class=ybold>Description: <span>Mettez-vous au vert sur NameK, il y'en aura pour tous ! A jardiner, à manger, à fumer, à vos souhaits. Venez découvrir une planète verte où vous pourrez participer à des jeux de piste grandeur nature sur la thématique des boules de crystal. Lors de sa dernière visite Buzz l'Eclair a même déclaré : 'vert l'infini et au delà</span></p>
+   
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button onclick="ajouterArticle(100000)" type="button" class="btn btn-primary">Ajouter au panier</button>
+            </div>
+        </div>
+    </div>
+</div><!-- Kashyyyk -->
+<div class="modal fade" id="Kashyyyk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    
+                    <p class=ybold>Localisation: <span>Mytaranor</span></p>
+                    <p class=ybold>Satellites: <span>3</span></p>
+                    <p class=ybold>Population: <span>45 000 000</span></p>
+                    <p class=ybold>Paysages: <span>Montages, Forêts et Marécages</span></p>
+                    <p class=ybold>Sites: <span>Arbres géant Wroshyrs et Cités dans les arbres</span></p>
+
+                    <p class=ybold>Description: <span>Surnommé l’Éternelle Verte en shyriiwook, Kashyyyk offre un cadre de vie paisible et bucolique, sa forte pluviométrie en fait une planète foisonnante de végétaux et d’amphibiens.
+                            Nous vous proposons un séjour en terre sauvage avec de nombreuses activités comme du rafting dans les rapides énergiques que comprends la région, des randonnées de plusieurs jours accompagnées de wookiees locaux qui n’hésiterons pas à vous faire passer dans les villages excentrés et vous offrir le gîte dans leurs maisons à même les arbres</span></p>
+                    <p class=ybold>Ativités:<span>Trek en forêt ou montagne, grimpe à l’arbre, marche découverte dans la foret tropical</span></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Ajouter au panier</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Noveria -->
+<div class="modal fade" id="Noveria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class=ybold>Localisation: <span>Petite Courrone</span></p>
+   <p class=ybold>Satellites: <span>0</span></p>
+   <p class=ybold>Population: <span>405 200</span></p>
+   <p class=ybold>Paysages: <span>Deserts, canyons et montagnes rocheuses</span></p>
+   <p class=ybold>Sites: <span>les grottes du glacier rose</span></p>
+   <p class=ybold>Langue(s): <span>Novérien</span></p>
+   <p class=ybold>Description: <span>Petit bijoux froid mais chaleureux de la constellation B-299, Noveria entré dans le grand consulat il y’a seulement 21 U.T.G  (unité temporelle globalisé) à su se faire une place comme destination incontournable pour tous les membres de la grande couronne de glace, son président d’honneur M.Menethil avait d’ailleurs dans ce discours de bienvenue encouragé les Noveriens à consideré son peuple comme des frères et soeurs enfin réunis. Trêve de petite anecdote historique vous trouverez sur ce globe un panel d’activité d’extérieur, les classiques sports d’hiver ainsi que de nombreuses visites de parc naturel immense ou vous pourrez admirer la richesse de son biotope</span></p>
+   <p class=ybold>Ativités: <span>activités hivernales de tout type, randonnée, ski, marche très nordique, Chasse aux Yetis</span></p>
+  </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Ajouter au panier</button>
+            </div>
+        </div>
+    </div>
+</div><!-- Arrakis -->
+<div class="modal fade" id="Arrakis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class=ybold>Localisation: <span>somewhere in the rainbow</span></p>
+   <p class=ybold>Satellites: <span>11</span></p>
+   <p class=ybold>Population: <span>2 000 000 000 </span></p>
+   <p class=ybold>Paysages: <span>Deserts, canyons et montagnes rocheuses</span></p>
+   <p class=ybold>Sites: <span>Mont Space-Rochemore</span></p>
+   <p class=ybold>Langue(s): <span>Chakobsa et Galach</span></p>
+   <p class=ybold>Description: <span>Arrakis, « La terre de feu » dit un jour feu un homme un peu fou partir en flamme. Adepte de sensation extrême ? Arrakis est faite pour vous ! Vous pourrez partir pour un sejour de 1 mois en immersion dans une caravane Fremen traversant le desert pour se rendre à Arrakeen.
+   Vous pourrez également profiter des impétueuses falaises du Nord et prendre plaisir à escalader cette pierre orange et chaude. N’hésitez pas à venir prendre un petit ver(re) chez nous !",</span></p>
+   <p class=ybold>Ativités: <span>Séjours en caravane normade, cure de vitaminde D, chevauché de ver,escalade</span></p>
+</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Ajouter au panier</button>
+            </div>
+        </div>
+    </div>
+</div>

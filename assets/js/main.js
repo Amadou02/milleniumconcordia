@@ -49,12 +49,12 @@ function rafraichirPanier(){
     }
     if(panier[i] == 20000) {
       nbreArticle5++;
-      document.getElementById('article5').innerHTML = 'Vous avez pris ' + nbreArticle5 + ' billet pour voyage sur Arrakis';
+      document.getElementById('article5').innerHTML = 'Vous avez pris ' + nbreArticle5 + ' billet pour voyage sur Noveria';
       document.getElementById('article5').style.visibility = 'visible';
     }
     if(panier[i] == 25000) {
       nbreArticle6++;
-      document.getElementById('article6').innerHTML = 'Vous avez pris ' + nbreArticle6 + ' billet pour voyage sur Noveria';
+      document.getElementById('article6').innerHTML = 'Vous avez pris ' + nbreArticle6 + ' billet pour voyage sur Arrakis';
       document.getElementById('article6').style.visibility = 'visible';
     }
     if(panier[i] == 30000) {

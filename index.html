@@ -43,63 +43,60 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">Contact</a>
                             </li>
+                            <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target="#exampleModal">Connexion</button>
                         </ul>
                         <input class="Search form-control mr-sm-2 " type="text" placeholder="Rechercher" aria-label="Search">
 
                         <button type="button" id="panier" class="btn btn-primary" data-toggle="modal" data-target="#modalPanier">Panier</button>
                         <div class="modal" id="modalPanier" tabindex="-1" role="dialog" aria-labelledby="modalPanierLabel" aria-hidden="true">
-                          <div class="h-100 modal-dialog modal-dialog-scrollable modal-lg" role="document">
-                            <div class="modal-content bgc3">
-                              <div class="modal-body ">
-                                <h3 class="text-center font-weight-bold">Votre panier</h3>
-                                <hr class="w-50 pb-2">
-                                <div class="row mx-2">
-                                  <div class="col-7">
-                                    <div class="justify-content-center align-content-center row bgc2">
-                                      <p>Articles dans votre panier</p>
+                            <div class="h-100 modal-dialog modal-dialog-scrollable modal-lg" role="document">
+                                <div class="modal-content bgc3">
+                                    <div class="modal-body ">
+                                        <h3 class="text-center font-weight-bold">Votre panier</h3>
+                                        <hr class="w-50 pb-2">
+                                        <div class="row mx-2">
+                                            <div class="col-7">
+                                                <div class="justify-content-center align-content-center row bgc2">
+                                                    <p>Articles dans votre panier</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div id="articlesPanier" class="col-12 shadow">
+                                                        <!-- ici on inserera les articles selectionnés -->
+                                                        <section>
+                                                            <div id="texte-panier">Mon panier est vide</div>
+                                                            <div>
+                                                                <ul id="details-panel">
+                                                                    <li id="article1">Vous n'avez pas d'article 1</li>
+                                                                    <li id="article2">Vous n'avez pas d'article 2</li>
+                                                                    <li id="article3">Vous n'avez pas d'article 3</li>
+                                                                    <li id="article4">Vous n'avez pas d'article 4</li>
+                                                                    <li id="article5">Vous n'avez pas d'article 5</li>
+                                                                    <li id="article6">Vous n'avez pas d'article 6</li>
+                                                                    <li id="article7">Vous n'avez pas d'article 7</li>
+                                                                    <li id="article8">Vous n'avez pas d'article 8</li>
+                                                                    <li id="article9">Vous n'avez pas d'article 9</li>
+                                                                    <li id="article10">Vous n'avez pas d'article 10</li>
+                                                                    <li id="article11">Vous n'avez pas d'article 11</li>
+                                                                    <li id="article12">Vous n'avez pas d'article 12</li>
+                                                                </ul>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 offset-1">
+                                                <div class="row">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="row">
-                                      <div id="articlesPanier" class="col-12 shadow">
-                                        <!-- ici on inserera les articles selectionnés -->
-                                        <section>
-                                          <div id="texte-panier">Mon panier est vide</div>
-                                          <div>
-                                            <ul id="details-panel">
-                                              <li id="article1">Vous n'avez pas d'article 1</li>
-                                              <li id="article2">Vous n'avez pas d'article 2</li>
-                                              <li id="article3">Vous n'avez pas d'article 3</li>
-                                              <li id="article4">Vous n'avez pas d'article 4</li>
-                                              <li id="article5">Vous n'avez pas d'article 5</li>
-                                              <li id="article6">Vous n'avez pas d'article 6</li>
-                                              <li id="article7">Vous n'avez pas d'article 7</li>
-                                              <li id="article8">Vous n'avez pas d'article 8</li>
-                                              <li id="article9">Vous n'avez pas d'article 9</li>
-                                              <li id="article10">Vous n'avez pas d'article 10</li>
-                                              <li id="article11">Vous n'avez pas d'article 11</li>
-                                              <li id="article12">Vous n'avez pas d'article 12</li>
-                                            </ul>
-                                          </div>
-                                        </section>
-                                      </div>
+                                    <div class="modal-footer">
+                                        <button id="validateCart" type="button" class="btn bgc1 txc4 shadow">Commander</button>
+                                        <button type="button" class="btn bgc6 txc4 shadow" data-dismiss="modal"><small>Continuez vos achats</small></button>
                                     </div>
-                                  </div>
-                                  <div class="col-4 offset-1">
-                                    <div class="row">
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button id="validateCart" type="button" class="btn bgc1 txc4 shadow">Commander</button>
-                                <button type="button" class="btn bgc6 txc4 shadow" data-dismiss="modal"><small>Continuez vos achats</small></button>
-                              </div>
                             </div>
-                          </div>
                         </div>
-
-                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-                            Connexion
-                        </button>
                     </div>
                 </nav>
                 <!-- Modal -->
@@ -128,7 +125,7 @@
                                                 <hr>
                                                 <button type="button" class="btn btn-danger btn-lg btn-block">Insciption par Mail</button>
                                                 <div>
-                                                    <small>Vous avez déja un compte airbnb ? <a href="#">Connexion</a></small>
+                                                    <small>Vous avez déja un compte Millenium concordia ? <a href="#">Connexion</a></small>
                                                 </div>
                                                 <br>
                                             </div>
@@ -169,37 +166,36 @@
                         </div>
                     </div>
                 </div>
-    </nav>
-</div>
-</header>
-<!-- main -->
-<main>
-<div ng-view></div>
-<div class="jumbotron m-5">
-    <section>
-        <div>
-          <button onclick="ajouterArticle(15000)">Ajouter un Mars pour 15000 M.I</button>
-          <button onclick="ajouterArticle(10000)">Ajouter un Jupiter pour 10000 M.I</button>
-          <button onclick="ajouterArticle(100000)">Ajouter un Namek pour 100000 M.I</button>
-          <button onclick="ajouterArticle(12000)">Ajouter une Kashyyyk pour 12000 M.I</button>
-          <button onclick="ajouterArticle(20000)">Ajouter un Arrakis pour 20000 M.I</button>
-          <button onclick="ajouterArticle(25000)">Ajouter un Noveria pour 25000 M.I</button>
-          <button onclick="ajouterArticle(30000)">Ajouter une Trantor pour 30000 M.I</button>
-          <button onclick="ajouterArticle(35000)">Ajouter un Étoile Noire pour 35000 M.I</button>
-          <button onclick="ajouterArticle(40020)">Ajouter un  pour Titan 40020 M.I</button>
-          <button onclick="ajouterArticle(45050)">Ajouter un  pour Lune 45050 M.I</button>
-          <button onclick="ajouterArticle(50050)">Ajouter un  pour Europe 50050 M.I</button>
-          <button onclick="ajouterArticle(55000)">Ajouter un Capella pour 55000 M.I</button>
+            </nav>
         </div>
-      </section>
-</div>
+    </header>
+    <!-- main -->
+    <main>
+        <div ng-view></div>
+        <div class="jumbotron m-5">
+            <section>
+                <div>
+                    <button onclick="ajouterArticle(15000)">Ajouter un Mars pour 15000 M.I</button>
+                    <button onclick="ajouterArticle(10000)">Ajouter un Jupiter pour 10000 M.I</button>
+                    <button onclick="ajouterArticle(100000)">Ajouter un Namek pour 100000 M.I</button>
+                    <button onclick="ajouterArticle(12000)">Ajouter une Kashyyyk pour 12000 M.I</button>
+                    <button onclick="ajouterArticle(20000)">Ajouter un Arrakis pour 20000 M.I</button>
+                    <button onclick="ajouterArticle(25000)">Ajouter un Noveria pour 25000 M.I</button>
+                    <button onclick="ajouterArticle(30000)">Ajouter une Trantor pour 30000 M.I</button>
+                    <button onclick="ajouterArticle(35000)">Ajouter un Étoile Noire pour 35000 M.I</button>
+                    <button onclick="ajouterArticle(40020)">Ajouter un  pour Titan 40020 M.I</button>
+                    <button onclick="ajouterArticle(45050)">Ajouter un  pour Lune 45050 M.I</button>
+                    <button onclick="ajouterArticle(50050)">Ajouter un  pour Europe 50050 M.I</button>
+                    <button onclick="ajouterArticle(55000)">Ajouter un Capella pour 55000 M.I</button>
+                </div>
+            </section>
+            </div>
+    </main>
 
-</main>
+    <!-- footer -->
+    <footer>
 
-<!-- footer -->
-<footer>
-
-</footer>
+    </footer>
 </div>
 <!-- scripts JQuery Popper et Bootstrap-->
 <script src="assets/js/jquery-3.4.0.min.js"></script>
